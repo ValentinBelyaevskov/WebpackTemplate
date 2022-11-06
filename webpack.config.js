@@ -40,10 +40,6 @@ module.exports = {
          filename: "index.html",
          template: "src/index.html",
       }),
-      new HtmlWebpackPlugin({
-         filename: "category-page.html",
-         template: "src/category-page.html",
-      }),
       new MiniCssExtractPlugin({
          filename: "./style/style.css",
       })
@@ -145,13 +141,6 @@ module.exports = {
    resolve: {
       alias: {
          alwaysPresent: path.resolve(__dirname, '/src/alwaysPresent'),
-         API: path.resolve(__dirname, '/src/API'),
-         common: path.resolve(__dirname, '/src/common'),
-         functions: path.resolve(__dirname, '/src/functions'),
-         hooks: path.resolve(__dirname, '/src/hooks'),
-         pages: path.resolve(__dirname, '/src/pages'),
-         redux: path.resolve(__dirname, '/src/redux'),
-         types: path.resolve(__dirname, '/src/types'),
       },
 
       fallback: { process: require.resolve("process/browser") }
