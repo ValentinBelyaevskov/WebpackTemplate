@@ -140,9 +140,7 @@ module.exports = {
 
    resolve: {
       alias: {
-         alwaysPresent: path.resolve(__dirname, '/src/alwaysPresent'),
+         // alwaysPresent: path.resolve(__dirname, '/src/alwaysPresent'),
       },
-
-      fallback: { process: require.resolve("process/browser") }
    }
 };
